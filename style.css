@@ -1,0 +1,957 @@
+:root {
+  --pink: #f14e95;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Work Sans', sans-serif;
+  min-height: 4000px;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem;
+  background: url(img/bg.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 11rem; /* Tambahkan padding di bawah */
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Optional: for darkening the background */
+  z-index: -1;
+}
+
+.hero .cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Menentukan lebar maksimum jika diperlukan */
+  margin: 0 auto;
+}
+
+.cover td {
+  padding: 0 1rem; /* Memberikan ruang antar teks */
+}
+
+.cover-item {
+  display: flex;
+}
+
+.cover-item h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 8rem;
+  color: #201E43;
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  margin: 0;
+}
+
+.hero h2 {
+  font-family: 'Courier Prime', system-ui;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero h4 {
+  font-size: 1.8rem;
+  font-family: "Cormorant Garamond", serif;
+  padding-bottom: 2rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif;
+  padding-top: 2rem;
+}
+
+.hero a {
+  color: black;
+  background-color: #EEEEEE;
+  padding: 0.5em 1.5em;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hero a:hover {
+  background-color: #4F709C;
+  color: white;
+}
+
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(4px);
+  padding: 0.5rem 1rem; /* Mengurangi padding navbar */
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: 'Sacramento', cursive;
+  font-size: 2.4rem; /* Mengurangi ukuran font untuk brand dan title */
+  font-weight: bold;
+  opacity: 50%;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+  font-size: 0.9rem; /* Mengurangi ukuran font untuk link */
+}
+
+.mynavbar .navbar-toggler {
+  padding: 0.25rem 0.5rem; /* Mengurangi padding tombol toggle */
+}
+
+
+.page1 {
+  align-content: center;
+  margin: auto;
+  padding: auto;
+  background-image: url(img/bg2.png);
+  background-size: cover;
+  background-position: center;
+  min-height:100vh;
+}
+
+
+.page1 .animasi {
+  width: 60%;
+  height: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page1 .ayat{
+  font-size: 2.3rem;
+  margin-top: 1rem;
+}
+
+.page1 .arti{
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-family: 'Merriweather';
+  color: #0a0a0a;
+  font-weight: 200;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 3rem;
+  font-size: 1.3rem;
+
+}
+
+.page1 .nosurat{
+  font-size: 2rem;
+  font-family: 'Merriweather';
+  color: #0a0a0a;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 8rem;
+  
+}
+
+
+.home {
+  align-content: center;
+  margin: auto;
+  padding: auto;
+  background-image: url(img/bg2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative; /* Menambahkan position relative untuk mengatur jarak */
+  padding-bottom: 5rem; /* Menambahkan padding bawah untuk jarak */
+}
+
+
+.font-secondary {
+  font-family: 'Great Vibes', cursive;
+}
+
+.section-title {
+  padding-top: 7rem;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1.5px;
+  background: #03346E;
+}
+
+.section-title::before {
+  bottom: 11px;
+  left: calc(50% - 80px);
+}
+
+.section-title::after {
+  bottom: 11px;
+  right: calc(50% - 80px);
+}
+
+.home h3 {
+  color: #444;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.home .open {
+  font-size: 1.2rem;
+  color: #666;
+  font-family: 'Merriweather';
+  padding-right: 2.2rem;
+  padding-left: 2.2rem;
+}
+
+.home .close{
+  font-size: 1.1rem;
+  color: #666;
+  font-family: 'Merriweather';
+  padding-right: 2.2rem;
+  padding-left: 2.2rem;
+}
+
+.home .couple .pass {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+
+
+.home .row h3 {
+  font-family: 'Sacramento';
+  font-size: 3rem;
+  color: var(--pink);
+  font-weight: 400;
+}
+
+.home .couple h3 {
+  padding-top: 1rem;
+  font-family: 'Sacramento';
+  font-size: 3.2rem;
+  color: #03346E;
+  font-weight: 599;
+}
+
+.home .couple img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan lembut */
+}
+
+a.button1 {
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2em 1em;
+  border: 2.5px solid #d5d9d9;
+  border-radius: 20px;
+  margin: 0 0.3em 0.3em 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Amazon Ember', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  transition: all 0.2s;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+a.button1 .icon {
+  margin-right: 8px;
+  font-size: inherit;
+  display: flex;
+  align-items: center;
+}
+
+a.button1 .text {
+  vertical-align: middle;
+}
+
+a.button1:hover {
+  background-color: #f7fafa;
+}
+
+a.button1:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.home .ikon i {
+  margin: 1.7rem;
+  color: #021526;
+}
+
+.home .heart {
+  margin-top: 7.8rem;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+
+.info {
+  font-family:"Courier Prime", system-ui ;
+  align-content: center;
+  margin: auto;
+  background-image: url(img/bg2.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative; /* Menambahkan position relative untuk mengatur jarak */
+  padding-top: 8rem;
+  padding-bottom: 5rem; /* Menambahkan padding bawah untuk jarak */
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.info h2, .info h3 {
+  font-family: 'Great Vibes', cursive;
+  color: #102C57;
+  font-size: 4.5rem;
+  font-weight:500;
+}
+
+
+
+.info-title {
+  font-family: 'Great Vibes', cursive;
+  color: #102C57;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.colorful-card {
+  font-family:"Courier Prime", system-ui ;
+  border: 1px solid #f0efef;
+  background: linear-gradient(135deg, rgba(255, 183, 197, 0.5), rgba(172, 229, 238, 0.5));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  color: #1a1a1a;
+  border: none;
+}
+
+.colorful-header {
+  background-color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.colorful-footer {
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.colorful-icon {
+  font-size: 1.5rem;
+  color: #03002c;
+}
+
+.colorful-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.alamat {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333;
+}
+
+
+.story h2{
+  font-family: 'Great Vibes', cursive;
+  color: #102C57;
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.story,
+.gifts {
+  background-image: url(img/bg2.png);
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.story span,
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.story p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.story .pembuka p{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+}
+
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: '';
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 190px;
+  height: 190px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Menambahkan bayangan lembut */
+}
+
+.timeline li .timeline-panel {
+  width: 30%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.timeline .timeline-heading h3 {
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+
+.gifts h2{
+  font-family: 'Great Vibes', cursive;
+  color: #102C57;
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.gifts p {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  padding-bottom: 1rem;
+}
+
+.gifts table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: 'Courier Prime', system-ui;
+}
+
+.gifts table td {
+  padding: 13px;
+  border: none; /* Remove internal borders */
+}
+
+.gifts table td span {
+  color: #555;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.gifts table td span#rekening1, 
+.gifts table td span#rekening2 {
+  color: #333;
+  font-weight: bold;
+}
+
+.gifts table td div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gifts table td button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.gifts table td button img {
+  width: 24px;
+  height: 24px;
+}
+
+.gifts table tr:first-child td,
+.gifts table tr:nth-child(3) td {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+footer {
+  padding: 3rem;
+  background-color:#180637 ;
+  color: white;
+}
+
+footer a {
+  color: #ffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query */
+/* Extra large */
+
+@media (min-width: 1200px) {
+  .hero {
+    padding-bottom: 5rem; /* Kurangi padding bawah agar tidak terlalu jauh */
+  }
+
+  .hero h1 {
+    font-size: 8rem; /* Ukuran teks lebih kecil */
+  }
+
+  .hero h4{
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero p{
+    font-size: 1.2rem;
+  }
+
+  .cover {
+    flex-direction: row; /* Tampilkan dalam satu baris */
+    text-align: center; /* Center text in desktop view */
+  }
+  
+  .cover .fira {
+    flex: 1;
+    text-align: right; /* Letakkan di kanan */
+    padding-right: 2rem; /* Spacing di kanan */
+  }
+
+  .cover .dede {
+    flex: 1;
+    text-align: left; /* Letakkan di kiri */
+    padding-left: 2rem; /* Spacing di kiri */
+  }
+
+  .cover .dan {
+    flex: 0 0 auto;
+    padding: 0 1rem; /* Spacing antara "Fira" dan "Dede" */
+  }
+
+  .hero h2 {
+    font-size: 1.1rem; /* Ukuran teks lebih kecil */
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+}
+
+ 
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+  }
+  .hero{
+    padding-bottom: 7rem; /* Tambahkan padding di bawah */
+  }
+ 
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 70px;
+  }
+  .info{
+    padding-top: 5rem;
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc((100% - 200px));
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 65%;
+  }
+
+  .cover {
+    flex-direction: column; /* Tampilkan dalam kolom */
+    align-items: flex-start; /* Align items to the start */
+    text-align: center; /* Center text for mobile view */
+  }
+
+  .cover .fira {
+    order: 1; /* Letakkan "Fira" di atas */
+    align-self: flex-start; /* Posisikan di kanan */
+    padding: 0.5rem 4rem; /* Spacing untuk mobile */
+  }
+
+  .cover .dan {
+    order: 2; /* Letakkan "dan" di tengah */
+    font-size: 2rem; /* Mengatur ukuran teks untuk "dan" */
+    padding: 0.5rem 0; /* Spacing untuk mobile */
+  }
+
+  .cover .dede {
+    order: 3; /* Letakkan "Dede" di bawah */
+    align-self: flex-end; /* Posisikan di kiri */
+    padding: 0.5rem 4rem; /* Spacing untuk mobile */
+  }
+  .simply-countdown > .simply-section {
+    padding: 60px;
+    margin: 5px;
+  }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticky-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
+  .gifts table td {
+    padding: 10px;
+  }
+
+  .gifts table td span {
+    font-size: 1em;
+  }
+
+  .gifts table td span#rekening1, 
+  .gifts table td span#rekening2 {
+    font-size: 1.1em;
+  }
+
+  .gifts table {
+    box-shadow: none;
+    border-radius: 4px;
+  }
+
+  .gifts table td button img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* mobile phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 60%;
+  }
+  a.button1 {
+    padding: 0.15em 0.6em; /* Reduced padding for mobile */
+    border-radius: 15px; /* Smaller border-radius for mobile */
+    font-size: 13px; /* Smaller font size for mobile */
+    letter-spacing: 1px; /* Adjust letter-spacing for mobile */
+  }
+
+  a.button1 i {
+    margin-right: 4px; /* Adjust spacing for mobile */
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 40px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+}
+
+@media (max-width: 412px) {
+  html {
+    font-size: 45%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 25px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 59%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+  .gifts table td button img {
+    width: 18px;
+    height: 18px;
+  }
+
+}
+
+@media (max-width: 300px) {
+  html {
+    font-size: 30%;
+  }
+
+  .simply-countdown > .simply-section {
+    padding: 25px;
+    margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 50%;
+    transform: translateX(-20px);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+
+}
